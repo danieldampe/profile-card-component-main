@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/profile-card.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Profile Card -->
+    <template id="profile-card">
+        <div class="profile-card">
+            <div class="profile-card__block1">
+                <img class="profile-card-block1__img profile-picture">
+                <div class="profile-card-block1__name-and-age">
+                    <div class="profile-card-block1-name-and-age__name name"></div>
+                    <div class="profile-card-block1-name-and-age__age age"></div>
+                </div>
+                <div class="profile-card-block1__location location"></div>
+            </div>
+            <div class="profile-card__block2">
+                <div class="profile-card-block2__stat">
+                    <div class="profile-card-block2-stat__num followers"></div>
+                    <div class="profile-card-block2-stat__txt">Followers</div>
+                </div>
+                <div class="profile-card-block2__stat">
+                    <div class="profile-card-block2-stat__num likes"></div>
+                    <div class="profile-card-block2-stat__txt">Likes</div>
+                </div>
+                <div class="profile-card-block2__stat">
+                    <div class="profile-card-block2-stat__num photos"></div>
+                    <div class="profile-card-block2-stat__txt">Photos</div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
